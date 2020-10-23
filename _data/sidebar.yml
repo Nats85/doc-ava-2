@@ -1,9 +1,9 @@
 docs:
   - title: Prerrequisitos
     chapter: "prerrequisitos"
-  - title: Instalación de Aranda Virtual Agent en Teams
+  - title: Instalación
     chapter: "instalacion"
-  - title: Configuración de Aranda Virtual Agent en Teams
+  - title: Configuración
     chapter: "configuracion"
   - title: Uso de Aranda Virtual Agent
     chapter: "uso"
