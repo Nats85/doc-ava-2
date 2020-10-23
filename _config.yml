@@ -32,7 +32,7 @@ favicon         : /assets/branding/favicon.ico
 
 ## Output
 url             :
-baseurl         : /doc-ava
+baseurl         : /doc-ava-2
 destination     : _site          ## Output folder
 
 ## Collection Settings
