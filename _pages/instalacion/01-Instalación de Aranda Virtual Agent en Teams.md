@@ -9,3 +9,6 @@ chapter: "instalacion"
 **a).**  Ingrese a Teams y haga clic en el icono de tres puntos
 
 ![]({{ site.baseurl }}/assets/images/7.png)
+
+
+**b).** En la ventana emergente que aparece, haga clic en **Más aplicaciones.**
