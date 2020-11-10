@@ -1,40 +1,72 @@
 ---
-title: Configuración previa en Aranda Service Desk
+title: Configuración de Aranda Virtual Agent en Teams
 chapter: "configuracion"
 ---
 
-En ASDK, se deben configurar dos nuevos grupos de trabajo: **Teams Manager** y **Teams Client**.
+Para configurar el servicio de Aranda Virtual Agent en Teams siga los siguientes pasos:
 
-Así mismo se deben crear dos nuevos usuarios: **tmanager** y **tclient**.
+**a).** Haga clic en la pestaña **Configuración**.
 
-Estos usuarios deben asociarse a los respectivos grupos de trabajo anteriormente creados y luego se les deben asignar los dos permisos correspondientes a cada grupo de trabajo así:
+![]({{ site.baseurl }}/assets/images/12.png)
 
-| __Grupo de trabajo y usuario__  | Permisos en la consola de administración __Aranda Service Desk BLOGIK__ | Permisos en la consola de especialistas __Aranda Service Desk FRONT END__ |
-|-----------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------|
-|   Teams Manager -> tmanager | ·         APPLICATION EXECUTE ·         TEAMS MANAGER               |                                                                       |
-|   Teams Client -> tclient   |                                                                     | ·         APPLICATION EXECUTE ·         TEAMS CLIENT |
+**b).** Ingrese los siguientes datos en los campos solicitados y haga clic en **Ingresar:**
 
-Posteriormente, en el servidor donde se encuentre instalada la aplicación de
-Aranda Service Desk USDKv8 (consola de usuario) siga los siguientes pasos:
+- **USDK BackEnd Url:** https://servidoraranda/ASDKAPI/
 
-1.  Diríjase a la ruta de instalación (generalmente es
-    C:\\inetpub\\wwwroot\\USDKV8) y una vez allí, ubique el archivo llamado
-    Web.config
+- **Usuario:** tmanager
 
-![]({{ site.baseurl }}/assets/images/5fd2adc56faedc753374c62731c03e0b.png)
+- **Contraseña:** ABC123
 
-2.  Abra el archivo con un editor de texto y ubique la siguiente línea:
+- **Email Corporativo:** (usuario@arandasoft.com)
 
-    <`add name="X-Frame-Options" value="SAMEORIGIN" /`>
+- **Versión:** V8
 
-![]({{ site.baseurl }}/assets/images/14849444d140ce162040a517c35d7759.png)
+Aparecerá la siguiente ventana emergente:
 
-3.  Una vez ubicada, reemplácela por la siguiente línea:
+![]({{ site.baseurl }}/assets/images/13.png)
 
-    <`add name="Content-Security-Policy" value="frame-ancestors 'self' teams.microsoft.com *.azurewebsites.net"/\`>
+**c).** Ingrese los siguientes datos en los campos solicitados y haga clic en **Crear:**
 
-![]({{ site.baseurl }}/assets/images/fc8154177633b4eeecda11170d80061d.png)
+- **USDK Front End:** URL de la consola USDKV8.
 
-4.  Valide que en los DNS configurados en la línea anterior se incluya el de su ambiente de Aranda, de lo contrario adiciónelo (\*.sudns.com).
+- **USDK Back End Url:** URL del API de ASDKV8.
 
-5.  Guarde los cambios y reinicie el IIS.
+- **Usuario:** usuario TEAMS CLIENT (tclient)
+
+- **Contraseña:** contraseña Usuario TEAMS CLIENT.
+
+- **Email Corporativo:** (usuario@arandasoft.com)
+
+- **Versión:** V8
+
+- **Activa:** marcar la casilla
+
+
+Aparecerá la siguiente ventana con la configuración realizada:
+
+![]({{ site.baseurl }}/assets/images/14.png)
+
+
+**d).** Diríjase a App Studio (puede encontrar App Studio con la ayuda del buscador de Aplicaciones en
+Teams), y en la pestaña a **Manifest editor** seleccione la aplicación Aranda Virtual Agent.
+
+![]({{ site.baseurl }}/assets/images/15.png)
+
+
+**e).** Diríjase a la opción **Test and distribute** y luego haga clic en **Install**.
+
+![]({{ site.baseurl }}/assets/images/16.png)
+
+**f).** Haga clic en la flecha ubicada al lado derecho de **Agregar** y seleccione **Agregar a un equipo** o
+**Agregar a un chat**, según requiera. El chat o equipo debe haberse creado y configurado previamente
+en Teams de acuerdo a las necesidades o utilización que se le vaya a dar al bot.
+
+![]({{ site.baseurl }}/assets/images/17.png)
+
+**g).** Busque el chat o equipo y haga clic en **Configurar un bot.**
+
+![]({{ site.baseurl }}/assets/images/18.png)
+![]({{ site.baseurl }}/assets/images/19.png)
+
+Al finalizar la configuración, automáticamente llegará al chat un mensaje de saludo del bot de Aranda Virtual
+Agent.
