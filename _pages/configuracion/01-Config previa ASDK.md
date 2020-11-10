@@ -17,7 +17,7 @@ Estos usuarios deben asociarse a los respectivos grupos de trabajo anteriormente
 Posteriormente, en el servidor donde se encuentre instalada la aplicación de
 Aranda Service Desk USDKv8 (consola de usuario) siga los siguientes pasos:
 
- 1.  Diríjase a la ruta de instalación (generalmente es
+1.  Diríjase a la ruta de instalación (generalmente es
     C:\\inetpub\\wwwroot\\USDKV8) y una vez allí, ubique el archivo llamado
     Web.config
 
