@@ -11,6 +11,4 @@ Desde el panel de administración de Microsoft Teams (usuario autorizado) diríj
 
 En el pequeño icono junto a la opción encontrará una explicación y un enlace a la documentación de Microsoft.
 
-En el pequeño icono junto a la opción encontrará una explicación y un enlace a la documentación de Microsoft.
-
 ![]({{ site.baseurl }}/assets/images/2.png)
