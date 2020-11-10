@@ -7,4 +7,7 @@ chapter: "instalacion"
 >
 
 
-a).  Ingrese a Teams y haga clic en el icono de tres puntos
+**a).**  Ingrese a Teams y haga clic en el icono de tres puntos
+
+
+![]({{ site.baseurl }}/assets/images/6.png)
