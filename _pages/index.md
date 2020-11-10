@@ -5,4 +5,5 @@ permalink: /
 
 ### Aranda Virtual Agent
 
- Es una extensión que permite al usuario final interactuar con la mesa de servicios Aranda Service Desk desde el entorno de Microsoft Teams, a través del bot Albi.
+Aranda Virtual Agent es una extensión que permite interactuar con la mesa de servicios Aranda Service
+Desk desde el entorno de Microsoft Teams.
