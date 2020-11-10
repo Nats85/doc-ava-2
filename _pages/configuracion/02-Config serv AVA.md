@@ -5,7 +5,7 @@ chapter: "configuracion"
 
 Para configurar el servicio de Aranda Virtual Agent siga los siguientes pasos:
 
-1.  Diríjase al siguiente enlace:
+1.   Diríjase al siguiente enlace:
 
 <https://teamsuiservice.arandasoft.com/>
 
