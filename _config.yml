@@ -3,11 +3,8 @@
 ## Theme Settings
 ## ==============
 
-## Jekyll Theme
-remote_theme    : "aranda-docs/aranda-jekyll-theme"
-
 ## Settings used when generating the website
-title           : Albi Aranda Virtual Agent
+title           : Aranda Virtual Agent
 author          : Aranda Software
 version         : 1.0
 keywords        : Aranda Software, documentación, manuales
@@ -31,7 +28,7 @@ favicon         : /assets/branding/favicon.ico
 #  style: :compressed
 
 ## Output
-url             :
+url             :                ## Optional
 baseurl         : /doc-ava-2
 destination     : _site          ## Output folder
 
@@ -39,9 +36,9 @@ destination     : _site          ## Output folder
 ## ===================
 
 ## Outputs the _docs collection !Required
-collections:
-  pages:
-    output: true
+#collections:
+#  docs:
+#    output: true
 
 ## Sets the default attributes for each folder/path
 defaults:
@@ -49,7 +46,6 @@ defaults:
       path: ""
     values:
       layout: doc
-      sidebar: docs
 
 ## General Settings
 ## ================
@@ -88,6 +84,7 @@ compress_html:
 ## Files to process
 include:
   - .htaccess
+  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -121,6 +118,6 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 ## Generates Styles
 ## Disable to prevent styles from being generated.
-# sass:
-#  sass_dir: _scss
-#  style: :compressed
+sass:
+  sass_dir: _sass
+  style: :compressed
